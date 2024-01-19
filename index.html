@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div class="countdown-container">
+        <h1>Countdown Timer</h1>
+
+        <label for="duration">Set Timer (in minutes):</label>
+        <input type="number" id="duration" min="1" placeholder="Enter minutes">
+
+        
+        <div class="countdown">
+            <div class="box">
+                <div class="time" id="days">00</div>
+                <p>Days</p>
+            </div>
+            
+            <div class="box">
+                <div class="time" id="hours">00</div>
+                <p>Hours</p>
+            </div>
+
+            <div class="box">
+                <div class="time" id="minutes">00</div>
+                <p>Minutes</p>
+            </div>
+
+            <div class="box">
+                <div class="time" id="seconds">00</div>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <button onclick="startTimer()" id="startButton">Start</button>
+        <button onclick="pauseTimer()" id="pauseButton" style="display: none;">Pause</button>
+        <button onclick="playTimer()" id="playButton" style="display: none;">Play</button>
+        <button onclick="stopTimer()" id="stopButton" style="display: none;">Stop</button>
+        <button onclick="replayTimer()" id="replayButton" style="display: none;">Replay</button>
+        <button onclick="resetTimer()" id="resetButton" style="display: none;">Reset</button>
+
+        <p class="message" id="countdown-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

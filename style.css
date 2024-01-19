@@ -1,0 +1,96 @@
+*{
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3498db;
+}
+
+.countdown-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 50px 100px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 0 50px 10px #000;
+    background-color: #fff;
+}
+
+h1 {
+    color: #333;
+    font-size: 3.5rem;
+    font-family: 'Lobster', sans-serif!important;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: rgba(52, 152, 219, 0.5);
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.time {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 2em;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 20px;
+    min-width: 70px;
+}
+
+.message {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.box p{
+    font-size: larger;
+    font-weight: 700;
+    position: relative;
+    top: -10px;
+}
